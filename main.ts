@@ -1,4 +1,12 @@
-let NIckle = sprites.create(img`
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    NIckle.setVelocity(50, -150)
+    pause(150)
+    NIckle.setVelocity(0, 150)
+    pause(150)
+    NIckle.setVelocity(0, 0)
+})
+let NIckle: Sprite = null
+NIckle = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . e e e e e e . . . . . . 
@@ -140,3 +148,4 @@ scene.setBackgroundImage(img`
     8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
     ee88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
     `)
+NIckle.setStayInScreen(true)
