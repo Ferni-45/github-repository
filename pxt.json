@@ -3,7 +3,9 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "GitHub Repository": "github:ferni-45/github-repository#606fe64a82187ef2799df4bfe3297ae63227ec73"
+        "GitHub Repository": "github:ferni-45/github-repository#606fe64a82187ef2799df4bfe3297ae63227ec73",
+        "arcade-background-scroll": "github:microsoft/arcade-background-scroll#v0.1.2",
+        "controller": "*"
     },
     "files": [
         "main.blocks",
