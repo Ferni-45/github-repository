@@ -2,7 +2,8 @@
     "name": "GitHub Repository",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "GitHub Repository": "github:ferni-45/github-repository#606fe64a82187ef2799df4bfe3297ae63227ec73"
     },
     "files": [
         "main.blocks",
