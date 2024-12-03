@@ -58,7 +58,7 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     )
 })
 controller.down.onEvent(ControllerButtonEvent.Released, function () {
-    animation.stopAnimation(animation.AnimationTypes.ImageAnimation, NIckle)
+    animation.stopAnimation(animation.AnimationTypes.MovementAnimation, NIckle)
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
@@ -120,10 +120,10 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     )
 })
 controller.right.onEvent(ControllerButtonEvent.Released, function () {
-    animation.stopAnimation(animation.AnimationTypes.ImageAnimation, NIckle)
+    animation.stopAnimation(animation.AnimationTypes.MovementAnimation, NIckle)
 })
 controller.left.onEvent(ControllerButtonEvent.Released, function () {
-    animation.stopAnimation(animation.AnimationTypes.ImageAnimation, NIckle)
+    animation.stopAnimation(animation.AnimationTypes.MovementAnimation, NIckle)
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
