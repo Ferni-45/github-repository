@@ -1,6 +1,6 @@
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
-    NIckle,
+    Nickle,
     [img`
         . . . . f f f f . . . . . 
         . . f f c c c c f f . . . 
@@ -58,11 +58,11 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     )
 })
 controller.down.onEvent(ControllerButtonEvent.Released, function () {
-    animation.stopAnimation(animation.AnimationTypes.MovementAnimation, NIckle)
+    animation.stopAnimation(animation.AnimationTypes.MovementAnimation, Nickle)
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
-    NIckle,
+    Nickle,
     [img`
         . . . . . f f f f f . . . 
         . . . f f f f f f f f f . 
@@ -120,14 +120,14 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     )
 })
 controller.right.onEvent(ControllerButtonEvent.Released, function () {
-    animation.stopAnimation(animation.AnimationTypes.MovementAnimation, NIckle)
+    animation.stopAnimation(animation.AnimationTypes.MovementAnimation, Nickle)
 })
 controller.left.onEvent(ControllerButtonEvent.Released, function () {
-    animation.stopAnimation(animation.AnimationTypes.MovementAnimation, NIckle)
+    animation.stopAnimation(animation.AnimationTypes.MovementAnimation, Nickle)
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
-    NIckle,
+    Nickle,
     [img`
         . . . . . . . . . . . . . 
         . . . f f f f f f . . . . 
@@ -185,11 +185,11 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     )
 })
 controller.up.onEvent(ControllerButtonEvent.Released, function () {
-    animation.stopAnimation(animation.AnimationTypes.MovementAnimation, NIckle)
+    animation.stopAnimation(animation.AnimationTypes.MovementAnimation, Nickle)
 })
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
-    NIckle,
+    Nickle,
     [img`
         . . . . f f f f . . . . . 
         . . f f f f f f f f . . . 
@@ -246,11 +246,11 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     true
     )
 })
-let NIckle: Sprite = null
+let Nickle: Sprite = null
 scene.setBackgroundColor(11)
 pause(2000)
 tiles.setCurrentTilemap(tilemap`level4`)
-NIckle = sprites.create(img`
+Nickle = sprites.create(img`
     . . . . f f f f . . . . . 
     . . f f f f f f f f . . . 
     . f f f f f f c f f f . . 
@@ -268,5 +268,5 @@ NIckle = sprites.create(img`
     . . . f f f f f f . . . . 
     . . . f f . . f f . . . . 
     `, SpriteKind.Player)
-controller.moveSprite(NIckle, 60, 60)
-scene.cameraFollowSprite(NIckle)
+controller.moveSprite(Nickle, 60, 60)
+scene.cameraFollowSprite(Nickle)
